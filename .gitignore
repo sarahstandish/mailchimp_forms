@@ -1,0 +1,4 @@
+# command to create: ".vs/" | Out-File -Encoding ascii -FilePath .gitignore
+
+.vs/
+keys.php
