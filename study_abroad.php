@@ -15,6 +15,7 @@ echo display_checkbox("South Korea study abroad");
 echo display_checkbox("Russia study abroad");
 echo display_checkbox("Tunisia study abroad");
 echo display_checkbox("China study abroad");
+echo hidden_checkbox("Study abroad");
 echo display_submit_button($form_name);
 
 subscribe_and_tag($form_name, $study_abroad_interest_form_key, $own_list_id);

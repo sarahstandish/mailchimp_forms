@@ -107,7 +107,12 @@ function add_tag($email, $new_tags, $key, $list_id) {
 
     $email_hash = md5(strtolower($email));
 
-    $tags_array1 = [];
+    $tags_array1 = [
+        [
+            "name" => 'Recruitment',
+            "status" => 'active'
+        ]
+    ];
 
     foreach ($new_tags as $tag) {
         //convert to a series of key value pairs
