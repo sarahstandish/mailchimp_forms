@@ -158,6 +158,8 @@ function subscribe_and_tag($form_name, $key, $list_id) {
         add_subscriber($_POST['email'], $key,$_POST['phone'], $list_id);
         add_tag($_POST['email'], $_POST['tags'], $key, $list_id);
         echo "<p>Thanks for signing up!</p>";
+        $message = "{$_POST['email']} signed to learn more about {$_POST['tags']}";
+        mail('sarah@oneworldnow.org', 'New signup via website', $message);
     }
 }
 
